@@ -17,7 +17,15 @@ public class Main {
         while (true) {
             System.out.print("\nVase volba: ");
 
-            int volba = scan.nextInt();
+            String volbaStr = scan.next();
+
+            int volba;
+
+            try {
+                volba = Integer.parseInt(volbaStr);
+            } catch (NumberFormatException nfe) {
+                volba = 4;
+            }
 
             switch (volba) {
                 case 0 -> {
