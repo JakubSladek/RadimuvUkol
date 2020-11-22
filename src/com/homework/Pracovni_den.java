@@ -10,6 +10,7 @@ public class Pracovni_den {
     }
 
     public Pracovni_den(String prichod, String odchod) {
+        this.prichod = prichod;
         this.odchod = odchod;
     }
 
